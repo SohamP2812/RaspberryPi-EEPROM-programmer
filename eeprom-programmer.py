@@ -68,7 +68,7 @@ program = [126, 48, 109, 121, 51, 91, 95,
            112, 127, 123, 119, 31, 78, 61, 79, 71]
 
 # CLEAR MEM 0-255
-for addr in range(0, 2048):
+for addr in range(0, 256):
     writeEEPROM(addr, 0)
 
 # Arbitrary wait time that seemed to fix certain bugs due to signal timing.
